@@ -1,0 +1,13 @@
+header {
+  height: 75px;
+  background-color: rgb(38, 38, 88);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  color: white;
+  margin-left: 50px;
+  font-size: 1.8rem;
+}
