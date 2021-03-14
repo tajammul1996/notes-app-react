@@ -1,3 +1,4 @@
 import TitleCard from "./title-card";
+import Search from "./search";
 
-export { TitleCard };
+export { TitleCard, Search };
