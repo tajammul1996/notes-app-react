@@ -2,3 +2,32 @@
   display: flex;
   justify-content: center;
 }
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(38, 38, 88, 0.7);
+}
+
+.form {
+  background-color: rgb(38, 38, 88);
+  width: 400px;
+  padding: 20px 30px;
+}
+
+.label Input {
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.label Input::placeholder {
+  color: rgb(38, 38, 88);
+}
+
+.btn__container {
+  text-align: right;
+  margin: 0 -2px;
+}
