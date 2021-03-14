@@ -6,11 +6,11 @@ import styles from "./sidebar.module.css";
 import { NotesContext } from "../../contexts/NotesContext";
 
 const SideBar = ({ isModalVisible, setModalVisibility }) => {
-  const { notes } = useContext(NotesContext);
+  const { notes, setSelectedNote } = useContext(NotesContext);
   return (
     <aside>
       {notes.map((note, id) => (
-        <TitleCard title={note.title} key={id} />
+        <TitleCard note={note} key={id} setSelectedNote={setSelectedNote}/>
       ))}
 
       <Button

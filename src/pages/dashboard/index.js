@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { Form, Input, Button } from "antd";
 import Modal from "react-modal";
+import { v4 as uuid4 } from "uuid";
 
 import { Header, SideBar, Notes } from "../../components";
 import styles from "./dashboard.module.css";
@@ -60,7 +61,7 @@ const Dasboard = () => {
             <Button
               type="primary"
               onClick={() => {
-                setNotes([...notes, newNote]);
+                setNotes([...notes, {...newNote, id: uuid4()}]);
                 setModalVisibility(!isModalVisible);
               }}
             >
